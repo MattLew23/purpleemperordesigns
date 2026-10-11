@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #f5f2ee;
+    padding: 32px 16px;
+  }
+
+  .page {
+    background: #fff;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 52px 58px;
+    box-shadow: 0 2px 32px rgba(0,0,0,0.10);
+  }
+
+  .header { border-bottom: 2px solid #1a1a1a; padding-bottom: 18px; margin-bottom: 20px; }
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    color: #111;
+  }
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #555;
+    margin-top: 4px;
+    letter-spacing: 0.3px;
+  }
+  .contact {
+    font-size: 11.5px;
+    color: #444;
+    margin-top: 8px;
+    letter-spacing: 0.2px;
+  }
+  .contact a { color: #444; text-decoration: none; border-bottom: 1px solid #bbb; }
+
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0ddd8;
+  }
+
+  .skills-line { font-size: 12px; color: #333; line-height: 1.8; }
+  .skills-line span { display: inline-block; margin-right: 6px; }
+  .skills-line span:not(:last-child)::after { content: ' ·'; color: #bbb; }
+
+  .profile-text { font-size: 13px; line-height: 1.65; color: #2a2a2a; }
+
+  .job { margin-bottom: 18px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .job-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+  }
+  .job-dates {
+    font-size: 11px;
+    color: #888;
+    font-style: italic;
+    white-space: nowrap;
+    margin-left: 12px;
+  }
+  .job-org { font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; }
+  .job-intro { font-size: 12.5px; color: #444; margin-bottom: 6px; font-style: italic; }
+
+  ul.bullets { list-style: none; padding-left: 0; }
+  ul.bullets li {
+    font-size: 12.5px;
+    color: #333;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
+  ul.bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #bbb;
+    font-size: 11px;
+    top: 1px;
+  }
+
+  .vol-list { list-style: none; padding: 0; }
+  .vol-list li {
+    font-size: 12.5px;
+    color: #333;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .vol-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #bbb;
+    font-size: 11px;
+    top: 1px;
+  }
+
+  .edu-item { margin-bottom: 10px; }
+  .edu-qual {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+  }
+  .edu-inst { font-size: 12px; color: #666; font-style: italic; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">Matthew Lewis</div>
+    <div class="title">Digital Producer &amp; Creative Consultant</div>
+    <div class="contact">
+      Kent, UK &nbsp;·&nbsp; +44 (0)7835 743341 &nbsp;·&nbsp; lewisworks@gmail.com &nbsp;·&nbsp; <a href="https://lewisworks.uk">lewisworks.uk</a>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-line">
+      <span>Final Cut Pro</span>
+      <span>Adobe Creative Cloud</span>
+      <span>Affinity Suite</span>
+      <span>Canva</span>
+      <span>WordPress</span>
+      <span>Meta Business Suite</span>
+      <span>Agentic AI tools</span>
+      <span>Camera operation (DSLR/mirrorless)</span>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section">
+    <div class="section-title">Profile</div>
+    <p class="profile-text">Creative digital producer and consultant with 15+ years' experience producing films, social content, and digital strategy for conservation organisations, cultural institutions, and community groups. Combines high-quality visual storytelling with senior strategic thinking — working directly with clients from first conversation to final output. Deep knowledge of conservation and environmental audiences, including fundraising-led communications and public engagement.</p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Digital Producer &amp; Creative Consultant &nbsp;|&nbsp; LEWISWORKS</span>
+        <span class="job-dates">2006–2010, 2018–2019, Aug 2025–Present</span>
+      </div>
+      <div class="job-org">Self-employed</div>
+      <div class="job-intro">Freelance practice spanning strategy, creative direction, and digital production for conservation, arts, and heritage clients.</div>
+      <ul class="bullets">
+        <li>Providing strategic communications and content support to Seaquer, an AI-powered EcoImpact Platform trialling in Maidstone, Kent — spanning partner engagement, user communications, and platform development.</li>
+        <li>Produced a short film for the Friends of Old Park &amp; Chequers Wood celebrating the designation of Kent's newest Local Wildlife Site; promoted by Kent Wildlife Trust.</li>
+        <li>Directed and edited a short film documenting artist Richard Bartle's residency for the <em>Brick &amp; Stone, Iron &amp; Bronze</em> exhibition.</li>
+        <li>Produced an 8-minute film with Martin Parr for the <em>Only Human</em> exhibition at the National Portrait Gallery; formatted 10 clips for social media distribution.</li>
+        <li>Documented artist Richard Bartle's residency at Halka Sanat Projesi, Istanbul.</li>
+        <li>Commissioned as Digital Artist for the LET project (Creativity Works, Pennine Lancs), documenting artist-led community activity.</li>
+        <li>Advised on web strategy and produced audio and video podcasts for Art Sheffield festivals; documented <em>Transmission</em>, a series of artist talks at the Showroom Cinema, Sheffield, for Site Gallery.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Social Media Champion Volunteer &nbsp;|&nbsp; Vinters Valley Nature Reserve</span>
+        <span class="job-dates">Nov 2025–Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Manage day-to-day social media activity including scheduling, community management, and brand consistency.</li>
+        <li>Audited existing channels and developed a practical content strategy focused on community action and engagement.</li>
+        <li>Create visual content (reels, infographics, graphics) to support fundraising and seasonal campaigns.</li>
+        <li>Coach the Reserve Warden to build confidence and consistency in social media use.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Digital Participation Producer &nbsp;|&nbsp; National Portrait Gallery, London</span>
+        <span class="job-dates">2010–2018</span>
+      </div>
+      <div class="job-intro">Led digital content production across major exhibitions, education programmes, and national and international partnerships.</div>
+      <ul class="bullets">
+        <li>Produced films and digital projects for major exhibitions and partnerships including Museu Picasso, National Galleries Scotland, and Road to 2012.</li>
+        <li>Grew the Gallery's YouTube channel to 1.3M+ views through sustained digital content initiatives.</li>
+        <li>Initiated and led <em>Youth Crew</em> for BP Portrait Award: Next Generation, supporting emerging talent in media production.</li>
+        <li>Developed accessible interpretive content with artists, curators, and community participants.</li>
+        <li>Liaised with high-profile talent and creatives including Antony Gormley, Simon Schama, and Nadav Kander.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Membership Fundraiser &nbsp;|&nbsp; RSPB</span>
+        <span class="job-dates">Apr 2019–Apr 2023, Apr 2024–Jul 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Delivered face-to-face public engagement and membership recruitment at reserves and high-footfall venues.</li>
+        <li>Used engaging displays and family-friendly activities to inform visitors and promote habitat improvement.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Co-director &nbsp;|&nbsp; Slow Circular Earth UK</span>
+        <span class="job-dates">Dec 2021–Apr 2024</span>
+      </div>
+      <ul class="bullets">
+        <li>Co-led a social enterprise focused on grassroots climate action and circular economy initiatives.</li>
+        <li>Delivered sustainability projects including Zero Waste Cafés, Community Fridges, and Eco Fairs.</li>
+        <li>Led fundraising campaigns and secured funding for community-led environmental projects.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Board Director &amp; Committee Member &nbsp;|&nbsp; Bloc Projects, Sheffield</span>
+        <span class="job-dates">2006–2010</span>
+      </div>
+      <ul class="bullets">
+        <li>Held board-level responsibility for governance, organisational development, and strategic direction of an artist-led contemporary art space.</li>
+        <li>Programmed exhibitions and commissioned new work and writing for the public programme.</li>
+        <li>Developed and maintained the organisation's website and podcast archive.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LOWER TWO-COL -->
+  <div class="two-col">
+    <div>
+      <div class="section-title">Volunteering &amp; Training</div>
+      <ul class="vol-list">
+        <li>BTO Winter and Breeding Bird Survey volunteer, Kent</li>
+        <li>Carbon Literacy certified</li>
+        <li>Communications for Conservation Projects — Conservation Careers</li>
+        <li>Substack: naturedetox.substack.com</li>
+        <li>Featured on Curlew Action blog: <em>The Man Who Walked 53 Miles Dressed as a Curlew</em></li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-title">Education</div>
+      <div class="edu-item">
+        <div class="edu-qual">BA (Hons) Fine Art — First Class Honours</div>
+        <div class="edu-inst">Sheffield Hallam University, 1998–2001</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-qual">ILM-accredited Management Development Programme</div>
+        <div class="edu-inst">2016–2017</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-qual">Documentary Storytelling (short course)</div>
+        <div class="edu-inst">UCL, 2017</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-qual">BTEC Diploma Foundation (Art &amp; Design)</div>
+        <div class="edu-inst">Kent Institute of Art and Design, 1997–1998</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

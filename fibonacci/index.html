@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Slice Composer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Fibonacci Slice Composer</h1>
+      <p class="subtitle">Upload a JPG/PNG image and generate a 2:3:5:3:2 recomposition with hard cuts.</p>
+
+      <section class="panel controls">
+        <label class="upload">
+          <input id="fileInput" type="file" accept="image/jpeg,image/png" />
+          <span>Select JPG/PNG</span>
+        </label>
+        <label class="upload">
+          <input id="cameraInput" type="file" accept="image/*" capture="environment" />
+          <span>Use Camera</span>
+        </label>
+        <button id="resetButton" type="button">Reset</button>
+      </section>
+
+      <section id="dropZone" class="panel dropzone" aria-label="drag and drop area">
+        Drag and drop a JPG/PNG image here
+      </section>
+
+      <section class="panel canvas-panel">
+        <canvas id="outputCanvas"></canvas>
+      </section>
+
+      <section class="panel export">
+        <button id="exportPng" type="button" disabled>Export PNG</button>
+        <button id="exportJpg" type="button" disabled>Export JPG</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
